@@ -1,0 +1,22 @@
+server:
+  port: 8085
+
+management:
+  health:
+    show-details: always
+    probes.enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+
+logging:
+  level:
+    com.thehouse: DEBUG
+feign.client.config.default.loggerLevel: full
+
+health:
+  config:
+    enabled: false
+
