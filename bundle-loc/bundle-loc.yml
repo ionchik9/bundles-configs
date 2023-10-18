@@ -11,11 +11,6 @@ management:
         include: '*'
 
 
-logging:
-  level:
-    com.thehouse: DEBUG
-feign.client.config.default.loggerLevel: full
-
 health:
   config:
     enabled: false
